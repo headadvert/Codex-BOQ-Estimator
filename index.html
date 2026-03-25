@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOQ Pro | Construction Estimation Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="landing-page">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">BQ</span>
+        <span>
+          <strong>BOQ Pro</strong>
+          <small>Bill of Quantities and Cost Planning Platform</small>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="#platform">Platform</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#contractor">Contractor Support</a>
+      </nav>
+      <button class="outline-button" data-auth-trigger="boq">Open Workspace</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-block">
+      <div class="container hero-grid">
+        <div>
+          <p class="section-label">Professional Estimation Software</p>
+          <h1>Estimate by project type, country standard, floor schedule, and scope package.</h1>
+          <p class="lead-text">A cleaner construction workflow for consultants, contractors, and developers. Start in BOQ mode or Cost mode, define your project properly, build floor-wise room schedules, and export a branded report.</p>
+          <div class="hero-actions">
+            <button class="primary-button" data-auth-trigger="boq">Start BOQ Mode</button>
+            <button class="secondary-button" data-auth-trigger="cost">Start Cost Mode</button>
+          </div>
+          <div class="hero-tags">
+            <span>SBC</span>
+            <span>Dubai Municipality</span>
+            <span>NRM</span>
+            <span>CSI MasterFormat</span>
+            <span>CPWD / IS Codes</span>
+            <span>Australian Standards</span>
+          </div>
+        </div>
+        <div class="hero-stack">
+          <article class="panel-card dark-panel animated-rise">
+            <p class="section-label inverse">Core Coverage</p>
+            <div class="kpi-grid">
+              <article><strong>7</strong><span>Project Types</span></article>
+              <article><strong>14</strong><span>Turnkey Scopes</span></article>
+              <article><strong>Floor-wise</strong><span>Room Scheduling</span></article>
+              <article><strong>PDF</strong><span>Branded Export</span></article>
+            </div>
+          </article>
+          <article class="panel-card contact-card animated-rise delay-2" id="contractor">
+            <p class="section-label">Looking For A Contractor To Build This Project?</p>
+            <h3>Al Qaswaa Al Sharqia Trading Est</h3>
+            <p>We do not just estimate. We support procurement, project coordination, and execution delivery.</p>
+            <div class="contact-list">
+              <span>Contact Person: Imran Khoje</span>
+              <span>Position: Business Development Manager</span>
+              <a href="tel:+966511759092">+966511759092</a>
+              <a href="tel:+966573524746">+966573524746</a>
+              <a href="mailto:info@qaswasharqia.com">info@qaswasharqia.com</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section light-surface" id="platform">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Platform Direction</p>
+          <h2>Separate the workflow, reduce confusion, and carry user choices precisely into every next step.</h2>
+        </div>
+        <div class="feature-grid three-up">
+          <article class="feature-card"><h3>Mode Separation</h3><p>BOQ mode and Cost mode stay distinct from landing page through outputs.</p></article>
+          <article class="feature-card"><h3>Floor-Wise Entry</h3><p>Add floors first, then define the room schedule under each floor for better manual input.</p></article>
+          <article class="feature-card"><h3>Scope-Aware Outputs</h3><p>If a package is deselected, it is excluded from BOQ, cost, and material takeoff calculations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="workflow">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Workflow</p>
+          <h2>Mode and project, floor schedule, scope and market, then a branded output.</h2>
+        </div>
+        <div class="feature-grid three-up">
+          <article class="workflow-card"><span>01</span><h3>Mode & Project</h3><p>Choose project type, standard, finish, complexity, and project basics.</p></article>
+          <article class="workflow-card"><span>02</span><h3>Floor Schedule</h3><p>Create floors and add room schedules under each floor with dimensions and quantities.</p></article>
+          <article class="workflow-card"><span>03</span><h3>Scope & Output</h3><p>Apply market rates, remove unwanted packages, and generate a professional report.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-shell" id="authModal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeAuthModal" type="button" aria-label="Close">X</button>
+      <p class="section-label">Create Project Workspace</p>
+      <h2>Continue to BOQ Pro</h2>
+      <form id="signupForm" class="form-grid single-column">
+        <label>Full Name<input id="userName" type="text" placeholder="Your full name" required></label>
+        <label>Email<input id="userEmail" type="email" placeholder="name@company.com" required></label>
+        <label>Company<input id="userCompany" type="text" placeholder="Company or consultancy name"></label>
+        <label>Phone<input id="userPhone" type="tel" placeholder="+966511759092"></label>
+        <button class="primary-button full-width" type="submit">Create Workspace</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
