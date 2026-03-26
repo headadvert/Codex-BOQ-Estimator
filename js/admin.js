@@ -1,1 +1,0 @@
-window.BOQAdmin={ready:true};
